@@ -21,8 +21,14 @@
 ---
 [![](https://visitcount.itsvg.in/api?id=Nitesh000&icon=0&color=0)](https://visitcount.itsvg.in)
 
+ ## 🎮 curly_hair007
+
+Plays on PlayStation 5  
+Send me a request if you're a gamer!
+
+[![PSN Profile Card](https://card.psnprofiles.com/2/curly_hair007.png)](https://psnprofiles.com/curly_hair007)
+
   ## 💰 You can help me by Donating
   [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/nemister) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/nitesh000) 
 
-  
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+ 
