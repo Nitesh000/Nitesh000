@@ -17,18 +17,16 @@ jobs:
 
       - name: Fetch Hashnode posts and update README
         run: |
-          # Fetch posts from Hashnode GraphQL API
           RESPONSE=$(curl -s -X POST https://gql.hashnode.com \
             -H "Content-Type: application/json" \
             -d '{
-              "query": "{ publication(host: \"blog.thecodingant.in\") { posts(first: 5) { edges { node { title url publishedAt brief } } } } }"
+              "query": "{ publication(host: \"blog.thecodingant.in\") { posts(first: 5) { edges { node { title url publishedAt } } } } }"
             }')
 
-          # Extract posts and format them
+          # Format with dates (using simpler method)
           POSTS=$(echo $RESPONSE | jq -r '.data.publication.posts.edges[] | 
-            "- [\(.node.title)](\(.node.url)) - \(.node.publishedAt | fromdateiso8601 | strftime("%b %d, %Y"))"')
+            "- [\(.node.title)](\(.node.url)) - \(.node.publishedAt[:10])"')
 
-          # Update README
           sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$POSTS"'\n<!-- BLOG-POST-LIST:END -->' README.md
 
       - name: Commit changes
