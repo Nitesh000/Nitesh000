@@ -2,7 +2,7 @@ name: Latest Hashnode Posts
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 0 * * 1" # Weekly instead of daily
   workflow_dispatch:
 
 permissions:
@@ -19,8 +19,5 @@ jobs:
       - name: Pull in Hashnode posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://blog.thecodingant.in/rss.xml"
-          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-          accept_header: "application/rss+xml"
-          retry_count: 5
-          retry_wait_time: 30
+          feed_list: "https://api.rss2json.com/v1/api.json?rss_url=https://blog.thecodingant.in/rss.xml"
+          custom_tags: "title/title,link/link,pubDate/pubDate"
