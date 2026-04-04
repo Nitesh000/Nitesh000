@@ -22,3 +22,5 @@ jobs:
           feed_list: "https://blog.thecodingant.in/rss.xml"
           user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
           accept_header: "application/rss+xml"
+          retry_count: 5
+          retry_wait_time: 30
