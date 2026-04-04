@@ -2,7 +2,7 @@ name: Update README with Hashnode Posts
 
 on:
   schedule:
-    - cron: "0 0 * * 0" # Weekly on Sunday
+    - cron: "0 0 * * 0"
   workflow_dispatch:
 
 permissions:
@@ -15,19 +15,68 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Fetch Hashnode posts and update README
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch and update posts
         run: |
-          RESPONSE=$(curl -s -X POST https://gql.hashnode.com \
-            -H "Content-Type: application/json" \
-            -d '{
-              "query": "{ publication(host: \"blog.thecodingant.in\") { posts(first: 5) { edges { node { title url publishedAt } } } } }"
-            }')
+          python << 'EOF'
+          import requests
+          import re
 
-          # Format with dates (using simpler method)
-          POSTS=$(echo $RESPONSE | jq -r '.data.publication.posts.edges[] | 
-            "- [\(.node.title)](\(.node.url)) - \(.node.publishedAt[:10])"')
+          # Fetch posts from Hashnode
+          query = """
+          {
+            publication(host: "blog.thecodingant.in") {
+              posts(first: 5) {
+                edges {
+                  node {
+                    title
+                    url
+                    publishedAt
+                  }
+                }
+              }
+            }
+          }
+          """
 
-          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$POSTS"'\n<!-- BLOG-POST-LIST:END -->' README.md
+          response = requests.post('https://gql.hashnode.com', json={'query': query})
+          data = response.json()
+
+          posts = data['data']['publication']['posts']['edges']
+
+          # Format posts
+          post_list = []
+          for post in posts:
+              node = post['node']
+              title = node['title']
+              url = node['url']
+              date = node['publishedAt'][:10]
+              post_list.append(f"- [{title}]({url}) - {date}")
+
+          posts_markdown = '\n'.join(post_list)
+
+          # Read README
+          with open('README.md', 'r') as f:
+              content = f.read()
+
+          # Update content between markers
+          pattern = r'<!-- BLOG-POST-LIST:START -->.*?<!-- BLOG-POST-LIST:END -->'
+          replacement = f'<!-- BLOG-POST-LIST:START -->\n{posts_markdown}\n<!-- BLOG-POST-LIST:END -->'
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          # Write back
+          with open('README.md', 'w') as f:
+              f.write(new_content)
+
+          print("✅ README updated successfully!")
+          EOF
 
       - name: Commit changes
         run: |
