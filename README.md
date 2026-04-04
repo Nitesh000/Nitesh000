@@ -34,4 +34,9 @@ Send me a request if you're a gamer!
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+- [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://blog.thecodingant.in/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem) - 2026-04-04
+- [React 19: The Update That Actually Changes How You Build](https://blog.thecodingant.in/react-19-the-update-that-actually-changes-how-you-build) - 2026-04-04
+- [CSS Grid: The Layout System You're Probably Underusing](https://blog.thecodingant.in/css-grid-the-layout-system-you-re-probably-underusing) - 2026-04-03
+- [Axios Interceptors: The Middleware Pattern That'll Save You Hours](https://blog.thecodingant.in/axios-interceptors-the-middleware-pattern-that-ll-save-you-hours) - 2026-04-01
+- [PostHog: All-in-One Production Monitoring That Actually Works](https://blog.thecodingant.in/posthog-all-in-one-production-monitoring-that-actually-works) - 2026-03-30
 <!-- BLOG-POST-LIST:END -->
