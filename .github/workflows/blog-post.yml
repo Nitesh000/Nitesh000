@@ -2,9 +2,8 @@ name: Latest Hashnode Posts
 
 on:
   schedule:
-    # Runs at 00:00 every Sunday
     - cron: "0 0 * * 0"
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -20,6 +19,6 @@ jobs:
       - name: Pull in Hashnode posts
         uses: gautamkrishnar/blog-post-workflow@master
         with:
-          feed_list: "https://nitesh000.hashnode.dev/rss.xml"
-          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"
+          feed_list: "https://blog.thecodingant.in/rss.xml"
+          user_agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
           accept_header: "application/rss+xml"
