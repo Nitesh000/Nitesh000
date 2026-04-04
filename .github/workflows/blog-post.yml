@@ -1,23 +1,40 @@
-name: Latest Hashnode Posts
+name: Update README with Hashnode Posts
 
 on:
   schedule:
-    - cron: "0 0 * * 1" # Weekly instead of daily
+    - cron: "0 0 * * 0" # Weekly on Sunday
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-readme-with-blog:
-    name: Update README with latest blog posts
+  update-readme:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Pull in Hashnode posts
-        uses: gautamkrishnar/blog-post-workflow@master
-        with:
-          feed_list: "https://api.rss2json.com/v1/api.json?rss_url=https://blog.thecodingant.in/rss.xml"
-          custom_tags: "title/title,link/link,pubDate/pubDate"
+      - name: Fetch Hashnode posts and update README
+        run: |
+          # Fetch posts from Hashnode GraphQL API
+          RESPONSE=$(curl -s -X POST https://gql.hashnode.com \
+            -H "Content-Type: application/json" \
+            -d '{
+              "query": "{ publication(host: \"blog.thecodingant.in\") { posts(first: 5) { edges { node { title url publishedAt brief } } } } }"
+            }')
+
+          # Extract posts and format them
+          POSTS=$(echo $RESPONSE | jq -r '.data.publication.posts.edges[] | 
+            "- [\(.node.title)](\(.node.url)) - \(.node.publishedAt | fromdateiso8601 | strftime("%b %d, %Y"))"')
+
+          # Update README
+          sed -i '/<!-- BLOG-POST-LIST:START -->/,/<!-- BLOG-POST-LIST:END -->/c\<!-- BLOG-POST-LIST:START -->\n'"$POSTS"'\n<!-- BLOG-POST-LIST:END -->' README.md
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updated with latest blog posts"
+          git push
