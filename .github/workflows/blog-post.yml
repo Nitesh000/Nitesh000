@@ -2,7 +2,7 @@ name: Update README with Hashnode Posts
 
 on:
   schedule:
-    - cron: "0 0 * * 0"
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 permissions:
@@ -33,7 +33,7 @@ jobs:
           query = """
           {
             publication(host: "blog.thecodingant.in") {
-              posts(first: 5) {
+              posts(first: 7) {
                 edges {
                   node {
                     title
