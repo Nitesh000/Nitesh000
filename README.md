@@ -34,6 +34,7 @@ Send me a request if you're a gamer!
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+- [Design for Developers:  Making Your UI Actually Work Everywhere (Part 2)](https://nitesh000.hashnode.dev/design-for-developers-making-your-ui-actually-work-everywhere-part-2) - 2026-04-06
 - [Design for Developers: Stop Making Your Apps Look Like Po (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-po-part-1) - 2026-04-05
 - [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem) - 2026-04-04
 - [React 19: The Update That Actually Changes How You Build](https://nitesh000.hashnode.dev/react-19-the-update-that-actually-changes-how-you-build) - 2026-04-03
