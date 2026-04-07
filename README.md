@@ -34,11 +34,11 @@ Send me a request if you're a gamer!
 
 ## 📝 Latest Blog Posts
 <!-- BLOG-POST-LIST:START -->
+- [Writing Better APIs: Error Handling and Logging That Actually Works](https://nitesh000.hashnode.dev/writing-better-apis-error-handling-and-logging-that-actually-works) - 2026-04-07
 - [Design for Developers:  Making Your UI Actually Work Everywhere (Part 2)](https://nitesh000.hashnode.dev/design-for-developers-making-your-ui-actually-work-everywhere-part-2) - 2026-04-06
-- [Design for Developers: Stop Making Your Apps Look Like Po (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-po-part-1) - 2026-04-05
+- [Design for Developers: Stop Making Your Apps Look Like Potato (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-potato-part-1) - 2026-04-05
 - [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem) - 2026-04-04
 - [React 19: The Update That Actually Changes How You Build](https://nitesh000.hashnode.dev/react-19-the-update-that-actually-changes-how-you-build) - 2026-04-03
 - [CSS Grid: The Layout System You're Probably Underusing](https://nitesh000.hashnode.dev/css-grid-the-layout-system-you-re-probably-underusing) - 2026-04-02
 - [Axios Interceptors: The Middleware Pattern That'll Save You Hours](https://nitesh000.hashnode.dev/axios-interceptors-the-middleware-pattern-that-ll-save-you-hours) - 2026-04-01
-- [PostHog: All-in-One Production Monitoring That Actually Works](https://nitesh000.hashnode.dev/posthog-all-in-one-production-monitoring-that-actually-works) - 2026-03-30
 <!-- BLOG-POST-LIST:END -->
