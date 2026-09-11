@@ -42,4 +42,3 @@ Send me a request if you're a gamer!
 - [Design for Developers: Stop Making Your Apps Look Like Potato (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-potato-part-1) - 2026-04-05
 - [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem) - 2026-04-04
 <!-- BLOG-POST-LIST:END -->
-
