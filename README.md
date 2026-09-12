@@ -1,44 +1,86 @@
-# 💫 About Me:
-💻 Software Developer specializing in the MERN stack with a strong interest in building practical software and developer tools.<br><br>⚡ I enjoy creating CLI utilities, automation tools, and full-stack applications that solve real problems.<br><br>🧠 Currently exploring Go and Python to build fast, efficient tooling and backend systems.<br><br>🛠 Daily workflow revolves around TypeScript, JavaScript, React, Node.js, and modern development tooling.<br><br>⌨️ **Vim/Neovim enthusiast** who prefers a keyboard-driven workflow, constantly optimizing development speed and productivity through Vim-style editing.<br><br><p align="center"><br>**Vim Btw**<br></p>
+<h1 align="center">Hey, I'm Nitesh000 👋</h1>
+<h3 align="center">Full-stack/AI developer building practical software & developer tools</h3>
 
+<p align="center">
+  <a href="https://reddit.com/user/Yuu_000"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
+  <a href="https://x.com/nitesh_tudu040"><img src="https://img.shields.io/badge/X-black.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
+  <a href="https://youtube.com/@niteshtudu6449"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
+  <a href="mailto:support@thecodingant.in"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+</p>
 
-## 🌐 Socials:
-[![Reddit](https://img.shields.io/badge/Reddit-%23FF4500.svg?logo=Reddit&logoColor=white)](https://reddit.com/user/Yuu_000) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/nitesh_tudu040) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@niteshtudu6449) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:support@thecodingant.in) 
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=Nitesh000&icon=0&color=0" alt="Visitor count" />
+</p>
 
-# 💻 Tech Stack:
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=flat&logo=go&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=flat&logo=lua&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=flat&logo=rust&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=flat&logo=gnu-bash&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Nitesh000&theme=onedark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Nitesh000&theme=onedark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Nitesh000&theme=onedark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<br>
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Nitesh000&theme=merko&no-frame=false&no-bg=true&margin-w=4)
+## 💫 About Me
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Nitesh000&limit=5&theme=gruvbox&combine_all_yearly_contributions=true)
+- 💻 Software Developer specializing in the **MERN stack**, with a strong interest in building practical software and developer tools.
+- ⚡ I enjoy creating CLI utilities, automation tools, and full-stack applications that solve real problems.
+- 🧠 Currently exploring **Go** and **Python** to build fast, efficient tooling and backend systems.
+- 🛠 Daily workflow revolves around **TypeScript, JavaScript, React, Node.js**, and modern dev tooling.
+- ⌨️ **Vim/Neovim enthusiast** who prefers a keyboard-driven workflow, constantly optimizing development speed and productivity.
 
----
-[![](https://visitcount.itsvg.in/api?id=Nitesh000&icon=0&color=0)](https://visitcount.itsvg.in)
+<p align="center"><i>Vim Btw</i></p>
 
- ## 🎮 curly_hair007
+<br>
 
-Plays on PlayStation 5  
-Send me a request if you're a gamer!
+## 🧰 Tech Stack
 
-[![PSN Profile Card](https://card.psnprofiles.com/2/curly_hair007.png)](https://psnprofiles.com/curly_hair007)
+<p align="center">
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" />
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" />
+  <img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white" />
+  <img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/bash_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+</p>
 
-  ## 💰 You can help me by Donating
-  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/nemister) [![Ko-Fi](https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/nitesh000) 
+<br>
 
+## 📊 GitHub Snapshot
+
+<!-- GITHUB-STATS:START -->
+_(auto-updated daily by GitHub Actions)_
+<!-- GITHUB-STATS:END -->
+
+<p align="center">
+  <img src="./profile-metrics.svg" alt="GitHub metrics" width="100%" />
+</p>
+
+<br>
 
 ## 📝 Latest Blog Posts
+
 <!-- BLOG-POST-LIST:START -->
-- [Git Basics You Actually Need to Know - Part 2](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-2) - 2026-04-10
-- [Git Basics You Actually Need to Know - Part 1](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-1) - 2026-04-09
-- [JSDoc: The TypeScript Experience Without TypeScript](https://nitesh000.hashnode.dev/jsdoc-the-typescript-experience-without-typescript) - 2026-04-08
-- [Writing Better APIs: Error Handling and Logging That Actually Works](https://nitesh000.hashnode.dev/writing-better-apis-error-handling-and-logging-that-actually-works) - 2026-04-07
-- [Design for Developers:  Making Your UI Actually Work Everywhere (Part 2)](https://nitesh000.hashnode.dev/design-for-developers-making-your-ui-actually-work-everywhere-part-2) - 2026-04-06
-- [Design for Developers: Stop Making Your Apps Look Like Potato (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-potato-part-1) - 2026-04-05
-- [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem) - 2026-04-04
+- [Git Basics You Actually Need to Know - Part 2](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-2)
+- [Git Basics You Actually Need to Know - Part 1](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-1)
+- [JSDoc: The TypeScript Experience Without TypeScript](https://nitesh000.hashnode.dev/jsdoc-the-typescript-experience-without-typescript)
+- [Writing Better APIs: Error Handling and Logging That Actually Works](https://nitesh000.hashnode.dev/writing-better-apis-error-handling-and-logging-that-actually-works)
+- [Design for Developers: Making Your UI Actually Work Everywhere (Part 2)](https://nitesh000.hashnode.dev/design-for-developers-making-your-ui-actually-work-everywhere-part-2)
+- [Design for Developers: Stop Making Your Apps Look Like Potato (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-potato-part-1)
+- [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem)
 <!-- BLOG-POST-LIST:END -->
+
+<br>
+
+## 🎮 Gaming
+
+**curly_hair007** — plays on PlayStation 5. Send a friend request if you're a gamer!
+
+<p align="center">
+  <a href="https://psnprofiles.com/curly_hair007"><img src="https://card.psnprofiles.com/2/curly_hair007.png" alt="PSN Profile Card" /></a>
+</p>
+
+<br>
+
+## 💰 Support
+
+<p align="center">
+  <a href="https://paypal.me/nemister"><img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" /></a>
+  <a href="https://ko-fi.com/nitesh000"><img src="https://img.shields.io/badge/Ko--fi-F16061?style=for-the-badge&logo=ko-fi&logoColor=white" /></a>
+</p>
