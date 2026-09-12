@@ -141,9 +141,9 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase
           git add README.md
           git diff --quiet && git diff --staged --quiet || git commit -m "Updated with latest blog posts"
+          git pull --rebase
           git push
 
   update-github-stats:
@@ -237,9 +237,9 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git pull --rebase
           git add README.md
           git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats"
+          git pull --rebase
           git push
 
   update-profile-metrics:
