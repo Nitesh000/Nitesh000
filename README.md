@@ -49,9 +49,7 @@
 <!-- GITHUB-STATS:END -->
 
 <!-- METRICS:START -->
-<p align="center">
-  <img src="./profile-metrics-base.svg" alt="GitHub metrics" width="100%" />
-</p>
+_No metrics available right now._
 <!-- METRICS:END -->
 
 
