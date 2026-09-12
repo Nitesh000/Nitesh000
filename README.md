@@ -1,5 +1,5 @@
 <h1 align="center">Hey, I'm Nitesh000 👋</h1>
-<h3 align="center">Full-stack developer building practical software & developer tools</h3>
+<h3 align="center">Full-stack/AI developer building practical software & developer tools</h3>
 
 <p align="center">
   <a href="https://reddit.com/user/Yuu_000"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Nitesh000&icon=0&color=0" alt="Visitor count" />
+  <img src="https://komarev.com/ghpvc/?username=Nitesh000&style=for-the-badge&color=blue" alt="Profile views" />
 </p>
 
 <br>
