@@ -45,7 +45,7 @@
 ## 📊 GitHub Snapshot
 
 <!-- GITHUB-STATS:START -->
-_(auto-updated daily by GitHub Actions)_
+🔭 **80** public repos&nbsp;&nbsp;·&nbsp;&nbsp;⭐ **2** stars earned&nbsp;&nbsp;·&nbsp;&nbsp;👥 **6** followers&nbsp;&nbsp;·&nbsp;&nbsp;🔤 Most used language: **TypeScript**
 <!-- GITHUB-STATS:END -->
 
 <p align="center">
