@@ -1,15 +1,17 @@
-name: Update README with Hashnode Posts
+name: Update Profile README
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "0 */6 * * *"   # blog posts: every 6h
+    - cron: "0 3 * * *"     # github stats + metrics: once daily at 03:00 UTC
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-blog-posts:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 */6 * * *'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -26,62 +28,236 @@ jobs:
       - name: Fetch and update posts
         run: |
           python << 'EOF'
-          import requests
           import re
+          import sys
+          from urllib.parse import urlparse
+          from xml.etree import ElementTree as ET
 
-          # Fetch posts from Hashnode
-          query = """
-          {
-            publication(host: "blog.thecodingant.in") {
-              posts(first: 7) {
-                edges {
-                  node {
-                    title
-                    url
-                    publishedAt
-                  }
-                }
-              }
-            }
-          }
-          """
+          import requests
 
-          response = requests.post('https://gql.hashnode.com', json={'query': query})
-          data = response.json()
+          BASE_HOST = "blog.thecodingant.in"
+          SITEMAP_URL = f"https://{BASE_HOST}/sitemap.xml"
+          MAX_POSTS = 7
 
-          posts = data['data']['publication']['posts']['edges']
+          HEADERS = {"User-Agent": "Mozilla/5.0 (README bot)"}
+          NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 
-          # Format posts
+          NON_POST_SLUGS = {"", "rss.xml", "sitemap.xml", "newsletter", "rss", "sitemap"}
+
+
+          def fetch_xml(url):
+              resp = requests.get(url, headers=HEADERS, timeout=15)
+              resp.raise_for_status()
+              return ET.fromstring(resp.content)
+
+
+          def is_post_url(url):
+              parsed = urlparse(url)
+              if parsed.netloc != BASE_HOST:
+                  return False
+              path = parsed.path.strip("/")
+              if not path or "/" in path:
+                  return False
+              if path.lower() in NON_POST_SLUGS:
+                  return False
+              return True
+
+
+          def collect_urls(root):
+              entries = []
+              if root.tag.endswith("sitemapindex"):
+                  for sm in root.findall("sm:sitemap", NS):
+                      loc = sm.find("sm:loc", NS)
+                      if loc is None:
+                          continue
+                      try:
+                          sub_root = fetch_xml(loc.text)
+                      except requests.RequestException as e:
+                          print(f"Skipping sub-sitemap {loc.text}: {e}")
+                          continue
+                      entries += collect_urls(sub_root)
+              else:
+                  for u in root.findall("sm:url", NS):
+                      loc = u.find("sm:loc", NS)
+                      if loc is None:
+                          continue
+                      lastmod = u.find("sm:lastmod", NS)
+                      entries.append((loc.text, lastmod.text if lastmod is not None else ""))
+              return entries
+
+
+          def extract_title(html, fallback_slug):
+              match = re.search(r'<meta property="og:title" content="([^"]+)"', html)
+              if match:
+                  return match.group(1)
+              match = re.search(r"<title>([^<]+)</title>", html)
+              if match:
+                  return match.group(1).split("|")[0].strip()
+              return fallback_slug.replace("-", " ").title()
+
+
+          root = fetch_xml(SITEMAP_URL)
+          all_entries = collect_urls(root)
+          post_entries = [(url, lastmod) for url, lastmod in all_entries if is_post_url(url)]
+
+          if not post_entries:
+              print("No post URLs found in sitemap — check BASE_HOST / is_post_url filter.")
+              sys.exit(1)
+
+          post_entries.sort(key=lambda e: e[1], reverse=True)
+          post_entries = post_entries[:MAX_POSTS]
+
           post_list = []
-          for post in posts:
-              node = post['node']
-              title = node['title']
-              url = node['url']
-              date = node['publishedAt'][:10]
-              post_list.append(f"- [{title}]({url}) - {date}")
+          for url, _ in post_entries:
+              try:
+                  page = requests.get(url, headers=HEADERS, timeout=15)
+                  page.raise_for_status()
+                  slug = urlparse(url).path.strip("/")
+                  title = extract_title(page.text, slug)
+              except requests.RequestException as e:
+                  print(f"Skipping {url}: {e}")
+                  continue
+              post_list.append(f"- [{title}]({url})")
 
-          posts_markdown = '\n'.join(post_list)
+          if not post_list:
+              print("Fetched sitemap but could not build any post entries.")
+              sys.exit(1)
 
-          # Read README
-          with open('README.md', 'r') as f:
+          posts_markdown = "\n".join(post_list)
+
+          with open("README.md", "r") as f:
               content = f.read()
 
-          # Update content between markers
-          pattern = r'<!-- BLOG-POST-LIST:START -->.*?<!-- BLOG-POST-LIST:END -->'
-          replacement = f'<!-- BLOG-POST-LIST:START -->\n{posts_markdown}\n<!-- BLOG-POST-LIST:END -->'
+          pattern = r"<!-- BLOG-POST-LIST:START -->.*?<!-- BLOG-POST-LIST:END -->"
+          replacement = f"<!-- BLOG-POST-LIST:START -->\n{posts_markdown}\n<!-- BLOG-POST-LIST:END -->"
           new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-          # Write back
-          with open('README.md', 'w') as f:
+          with open("README.md", "w") as f:
               f.write(new_content)
 
-          print("✅ README updated successfully!")
+          print(f"✅ README updated with {len(post_list)} posts")
           EOF
-
-      - name: Commit changes
+      - name: Commit blog post changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          git pull --rebase
           git add README.md
           git diff --quiet && git diff --staged --quiet || git commit -m "Updated with latest blog posts"
           git push
+
+  update-github-stats:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 3 * * *'
+    needs: update-blog-posts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Fetch GitHub stats and update README
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python << 'EOF'
+          import os
+          import re
+          import sys
+
+          import requests
+
+          USERNAME = "Nitesh000"
+          TOKEN = os.environ.get("GH_TOKEN")
+          HEADERS = {"Accept": "application/vnd.github+json"}
+          if TOKEN:
+              HEADERS["Authorization"] = f"Bearer {TOKEN}"
+
+          user_resp = requests.get(f"https://api.github.com/users/{USERNAME}", headers=HEADERS, timeout=15)
+          user_resp.raise_for_status()
+          user = user_resp.json()
+
+          public_repos = user.get("public_repos", 0)
+          followers = user.get("followers", 0)
+
+          total_stars = 0
+          lang_counts = {}
+          page = 1
+          while True:
+              resp = requests.get(
+                  f"https://api.github.com/users/{USERNAME}/repos",
+                  headers=HEADERS,
+                  params={"per_page": 100, "page": page, "type": "owner"},
+                  timeout=15,
+              )
+              resp.raise_for_status()
+              repos = resp.json()
+              if not repos:
+                  break
+              for repo in repos:
+                  if repo.get("fork"):
+                      continue
+                  total_stars += repo.get("stargazers_count", 0)
+                  lang = repo.get("language")
+                  if lang:
+                      lang_counts[lang] = lang_counts.get(lang, 0) + 1
+              page += 1
+
+          top_lang = max(lang_counts, key=lang_counts.get) if lang_counts else "N/A"
+
+          stats_line = (
+              f"🔭 **{public_repos}** public repos&nbsp;&nbsp;·&nbsp;&nbsp;"
+              f"⭐ **{total_stars}** stars earned&nbsp;&nbsp;·&nbsp;&nbsp;"
+              f"👥 **{followers}** followers&nbsp;&nbsp;·&nbsp;&nbsp;"
+              f"🔤 Most used language: **{top_lang}**"
+          )
+
+          with open("README.md", "r") as f:
+              content = f.read()
+
+          pattern = r"<!-- GITHUB-STATS:START -->.*?<!-- GITHUB-STATS:END -->"
+          replacement = f"<!-- GITHUB-STATS:START -->\n{stats_line}\n<!-- GITHUB-STATS:END -->"
+          new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+
+          if new_content == content:
+              print("No change or markers not found — check README.md markers.")
+
+          with open("README.md", "w") as f:
+              f.write(new_content)
+
+          print(f"✅ GitHub stats updated: {stats_line}")
+          EOF
+      - name: Commit stats changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git pull --rebase
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || git commit -m "Updated GitHub stats"
+          git push
+
+  update-profile-metrics:
+    if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 3 * * *'
+    needs: update-github-stats
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Render GitHub metrics
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: profile-metrics.svg
+          user: Nitesh000
+          template: classic
+          base: header, activity, community, repositories, metadata
+          plugin_languages: yes
+          plugin_languages_limit: 8
+          plugin_achievements: yes
+          plugin_habits: yes
