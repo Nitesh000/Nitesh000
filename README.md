@@ -1,5 +1,5 @@
 <h1 align="center">Hey, I'm Nitesh000 👋</h1>
-<h3 align="center">Full-stack/AI developer building practical software & developer tools</h3>
+<h3 align="center">Full-stack developer building practical software & developer tools</h3>
 
 <p align="center">
   <a href="https://reddit.com/user/Yuu_000"><img src="https://img.shields.io/badge/Reddit-%23FF4500.svg?style=for-the-badge&logo=Reddit&logoColor=white" /></a>
@@ -45,25 +45,28 @@
 ## 📊 GitHub Snapshot
 
 <!-- GITHUB-STATS:START -->
-🔭 **80** public repos&nbsp;&nbsp;·&nbsp;&nbsp;⭐ **2** stars earned&nbsp;&nbsp;·&nbsp;&nbsp;👥 **6** followers&nbsp;&nbsp;·&nbsp;&nbsp;🔤 Most used language: **TypeScript**
+_(auto-updated daily by GitHub Actions)_
 <!-- GITHUB-STATS:END -->
 
+<!-- METRICS:START -->
 <p align="center">
-  <img src="./profile-metrics.svg" alt="GitHub metrics" width="100%" />
+  <img src="./profile-metrics-base.svg" alt="GitHub metrics" width="100%" />
 </p>
+<!-- METRICS:END -->
+
 
 <br>
 
 ## 📝 Latest Blog Posts
 
 <!-- BLOG-POST-LIST:START -->
-- [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
-- [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
-- [React 19.3 ViewTransition, Fragment Refs &amp; browser() guide](https://blog.thecodingant.in/react-19-3-0-is-here-viewtransitions-fragment-refs-and-a-smarter-server-boundary)
-- [nstall and manage AI agent skills across ai tools](https://blog.thecodingant.in/i-built-a-tui-package-manager-for-ai-agent-skills-here-s-why)
-- [AI guardrails for better development and breaking changes](https://blog.thecodingant.in/when-your-ai-coding-agent-goes-rogue)
-- [Git Merge, Rebase, and Reflog Guide - Part 2](https://blog.thecodingant.in/git-basics-you-actually-need-to-know-part-2)
-- [Git Basics Every Developer Needs to Know - Part 1 ](https://blog.thecodingant.in/git-basics-you-actually-need-to-know-part-1)
+- [Git Basics You Actually Need to Know - Part 2](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-2)
+- [Git Basics You Actually Need to Know - Part 1](https://nitesh000.hashnode.dev/git-basics-you-actually-need-to-know-part-1)
+- [JSDoc: The TypeScript Experience Without TypeScript](https://nitesh000.hashnode.dev/jsdoc-the-typescript-experience-without-typescript)
+- [Writing Better APIs: Error Handling and Logging That Actually Works](https://nitesh000.hashnode.dev/writing-better-apis-error-handling-and-logging-that-actually-works)
+- [Design for Developers: Making Your UI Actually Work Everywhere (Part 2)](https://nitesh000.hashnode.dev/design-for-developers-making-your-ui-actually-work-everywhere-part-2)
+- [Design for Developers: Stop Making Your Apps Look Like Potato (Part 1)](https://nitesh000.hashnode.dev/design-for-developers-stop-making-your-apps-look-like-potato-part-1)
+- [Your Site is Slow: Now What? A Developer's Guide to Actually Finding the Problem](https://nitesh000.hashnode.dev/your-site-is-slow-now-what-a-developer-s-guide-to-actually-finding-the-problem)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
