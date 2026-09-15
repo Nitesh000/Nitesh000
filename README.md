@@ -17,6 +17,7 @@
 ## 💫 About Me
 
 - 💻 Software Developer specializing in the **MERN stack**, with a strong interest in building practical software and developer tools.
+- 🤖 Have taken building software that includes AI, and AI helping tools like [skmp](https://github.com/Nitesh000/skmp) and [Atlas](https://atlas.thecodingant.in).
 - ⚡ I enjoy creating CLI utilities, automation tools, and full-stack applications that solve real problems.
 - 🧠 Currently exploring **Go** and **Python** to build fast, efficient tooling and backend systems.
 - 🛠 Daily workflow revolves around **TypeScript, JavaScript, React, Node.js**, and modern dev tooling.
