@@ -61,11 +61,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [OpenAI Agents API Beta: What MERN Devs Need to Know](https://blog.thecodingant.in/openai-s-agents-api-just-hit-public-beta-here-s-what-your-express-backend-needs-to-know)
 - [AI Coding Agents Hit 90% Adoption: What MERN Devs Need](https://blog.thecodingant.in/ai-coding-agents-hit-90-adoption-here-s-what-mern-devs-actually-need-to-know)
 - [React 19.3 ViewTransition, Fragment Refs &amp; browser() guide](https://blog.thecodingant.in/react-19-3-0-is-here-viewtransitions-fragment-refs-and-a-smarter-server-boundary)
 - [nstall and manage AI agent skills across ai tools](https://blog.thecodingant.in/i-built-a-tui-package-manager-for-ai-agent-skills-here-s-why)
 - [AI guardrails for better development and breaking changes](https://blog.thecodingant.in/when-your-ai-coding-agent-goes-rogue)
-- [Git Merge, Rebase, and Reflog Guide - Part 2](https://blog.thecodingant.in/git-basics-you-actually-need-to-know-part-2)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
