@@ -61,11 +61,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [AI Models Are Hiding Mistakes in Your Pipeline — Here&#x27;s How](https://blog.thecodingant.in/openai-caught-their-models-leaving-secret-notes-for-themselves-here-s-what-your-ai-pipeline-is-missing)
 - [Graceful Shutdown: Stop Killing Your Backend Mid-Request](https://blog.thecodingant.in/your-backend-is-probably-dying-wrong-here-s-how-to-fix-it)
 - [Polyfill.io Attack: Is Your React App Still Affected?](https://blog.thecodingant.in/your-app-might-still-be-running-the-polyfill-io-hack-here-s-how-to-check)
 - [Node.js in 2026: Native TS, Test Runner &amp; Permissions](https://blog.thecodingant.in/node-js-in-2026-three-features-that-actually-change-how-you-work)
 - [Background AI Agents in Your MERN Stack with AWS Pizza Bot](https://blog.thecodingant.in/aws-just-open-sourced-an-inbox-for-your-background-ai-agents-here-s-what-mern-devs-need-to-know)
-- [SpaceX Bought Cursor: What MERN Devs Need to Know](https://blog.thecodingant.in/spacex-just-bought-your-code-editor-what-mern-devs-need-to-know)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
