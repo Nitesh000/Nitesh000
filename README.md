@@ -6,7 +6,7 @@
   <a href="https://x.com/nitesh_tudu040"><img src="https://img.shields.io/badge/X-black.svg?style=for-the-badge&logo=X&logoColor=white" /></a>
   <a href="https://youtube.com/@niteshtudu6449"><img src="https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white" /></a>
   <a href="mailto:support@thecodingant.in"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://me.thecodingant.in"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" /></a>
+  <a href="https://me.thecodingant.in"><img src="https://me.thecodingant.in/favicon.ico" height="28" /></a>
 </p>
 
 <p align="center">
