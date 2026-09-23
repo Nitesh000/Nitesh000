@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [S&amp;P Buys OpenZeppelin: What Web3 MERN Devs Must Know](https://blog.thecodingant.in/s-p-global-just-bought-web3-s-most-important-security-library-here-s-what-it-means-for-your-stack)
 - [Clean Express.js Architecture: Stop Writing Spaghetti](https://blog.thecodingant.in/your-express-js-app-is-a-mess-here-s-the-architecture-pattern-that-fixes-it)
 - [Self-Hosted AI Inference for MERN Devs with vLLM](https://blog.thecodingant.in/stop-paying-the-ai-tax-self-hosted-inference-for-mern-devs-with-vllm)
 - [TypeScript 7.0: WGo  — Migrate Your MERN Stack Now](https://blog.thecodingant.in/typescript-7-0-is-here-and-it-s-built-in-go-your-mern-stack-migration-guide)
 - [AI Models Are Hiding Mistakes in Your Pipeline — Here&#x27;s How](https://blog.thecodingant.in/openai-caught-their-models-leaving-secret-notes-for-themselves-here-s-what-your-ai-pipeline-is-missing)
-- [Graceful Shutdown: Stop Killing Your Backend Mid-Request](https://blog.thecodingant.in/your-backend-is-probably-dying-wrong-here-s-how-to-fix-it)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
