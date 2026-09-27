@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [Go 1.27 SIMD: Supercharge Your MERN Stack Performance](https://blog.thecodingant.in/go-1-27-just-got-simd-and-your-node-js-bottlenecks-should-notice)
 - [DHH Quit Manual Coding — What MERN Devs Should Know](https://blog.thecodingant.in/dhh-stopped-writing-code-by-hand-and-what-that-means-for-you-as-a-mern-developer)
 - [Build a RAG Pipeline in Express.js for Your MERN App](https://blog.thecodingant.in/stop-feeding-your-llm-stale-context-build-a-rag-pipeline-into-your-mern-app)
 - [OpenCode: The Open-Source AI Coding Agent for MERN Devs](https://blog.thecodingant.in/opencode-hit-208k-stars-because-developers-are-done-with-vendor-lock-in)
 - [S&amp;P Buys OpenZeppelin: What Web3 MERN Devs Must Know](https://blog.thecodingant.in/s-p-global-just-bought-web3-s-most-important-security-library-here-s-what-it-means-for-your-stack)
-- [Clean Express.js Architecture: Stop Writing Spaghetti](https://blog.thecodingant.in/your-express-js-app-is-a-mess-here-s-the-architecture-pattern-that-fixes-it)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
