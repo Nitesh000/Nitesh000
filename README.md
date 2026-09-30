@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [OpenAI DevDay 2026: What MERN Devs Need to Know](https://blog.thecodingant.in/openai-devday-2026-what-mern-developers-actually-need-to-know)
 - [MERN Test Suite for AI Agents: Fix It Before Mo Does](https://blog.thecodingant.in/your-test-suite-isn-t-ready-for-ai-agents-here-s-how-to-fix-that)
 - [Go 1.27 SIMD: Supercharge Your MERN Stack Performance](https://blog.thecodingant.in/go-1-27-just-got-simd-and-your-node-js-bottlenecks-should-notice)
 - [DHH Quit Manual Coding — What MERN Devs Should Know](https://blog.thecodingant.in/dhh-stopped-writing-code-by-hand-and-what-that-means-for-you-as-a-mern-developer)
 - [Build a RAG Pipeline in Express.js for Your MERN App](https://blog.thecodingant.in/stop-feeding-your-llm-stale-context-build-a-rag-pipeline-into-your-mern-app)
-- [OpenCode: The Open-Source AI Coding Agent for MERN Devs](https://blog.thecodingant.in/opencode-hit-208k-stars-because-developers-are-done-with-vendor-lock-in)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
