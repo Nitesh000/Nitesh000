@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [Node.js 26 LTS: Temporal API Is Now Production-Ready](https://blog.thecodingant.in/node-js-26-is-now-lts-what-every-mern-developer-actually-needs-to-know)
 - [React 20: What Every MERN Developer Needs to Know](https://blog.thecodingant.in/react-20-just-changed-everything-here-s-what-mern-devs-need-to-know)
 - [Stop Using JSON Mode: Schema-Constrained LLM Outputs Guide](https://blog.thecodingant.in/your-ai-feature-is-lying-to-you-stop-using-json-mode-and-use-schema-constrained-outputs)
 - [Node vs Bun vs Deno 2026: Pick the Right MERN Runtime](https://blog.thecodingant.in/node-js-vs-bun-vs-deno-in-2026-the-runtime-decision-your-mern-stack-actually-needs-to-make)
 - [Python 3.14 Killed the GIL: What Devs Need to Know](https://blog.thecodingant.in/python-finally-killed-the-gil-what-free-threading-in-3-14-means-for-your-stack)
-- [OpenAI DevDay 2026: What MERN Devs Need to Know](https://blog.thecodingant.in/openai-devday-2026-what-mern-developers-actually-need-to-know)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
