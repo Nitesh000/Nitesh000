@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [AI-Generated Code Is Creating a Debugging Crisis](https://blog.thecodingant.in/your-ai-copilot-writes-code-faster-but-two-new-surveys-say-you-re-debugging-more-than-ever)
 - [Stream Data From Express to React — Full Guide 2026](https://blog.thecodingant.in/streaming-from-express-to-react-the-full-picture-most-tutorials-skip)
 - [React Server Components Streaming: The Pattern That Works](https://blog.thecodingant.in/your-react-app-is-fetching-data-like-it-s-2021-the-rsc-streaming-pattern-that-actually-works)
 - [Node.js 26 LTS: Temporal API Is Now Production-Ready](https://blog.thecodingant.in/node-js-26-is-now-lts-what-every-mern-developer-actually-needs-to-know)
 - [React 20: What Every MERN Developer Needs to Know](https://blog.thecodingant.in/react-20-just-changed-everything-here-s-what-mern-devs-need-to-know)
-- [Stop Using JSON Mode: Schema-Constrained LLM Outputs Guide](https://blog.thecodingant.in/your-ai-feature-is-lying-to-you-stop-using-json-mode-and-use-schema-constrained-outputs)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
