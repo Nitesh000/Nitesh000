@@ -62,11 +62,11 @@ _No metrics available right now._
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
 - [My recommended blogs - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/recommendations)
+- [GitHub Copilot Goes Local: What Stays on Your Machine?](https://blog.thecodingant.in/github-copilot-is-going-local-but-what-s-actually-staying-on-your-machine)
+- [Python 3.15: Lazy Imports, Faster JIT &amp; UTF-8 Default](https://blog.thecodingant.in/python-3-15-is-here-lazy-imports-a-faster-jit-and-the-one-change-that-might-break-your-code)
 - [AI Found 29,000 Open Source Bugs. Is Your MERN Stack Safe?](https://blog.thecodingant.in/ai-found-29-000-bugs-in-open-source-here-s-what-your-mern-stack-should-do-about-it)
 - [AI-Generated Code Is Creating a Debugging Crisis](https://blog.thecodingant.in/your-ai-copilot-writes-code-faster-but-two-new-surveys-say-you-re-debugging-more-than-ever)
 - [Stream Data From Express to React — Full Guide 2026](https://blog.thecodingant.in/streaming-from-express-to-react-the-full-picture-most-tutorials-skip)
-- [React Server Components Streaming: The Pattern That Works](https://blog.thecodingant.in/your-react-app-is-fetching-data-like-it-s-2021-the-rsc-streaming-pattern-that-actually-works)
-- [Node.js 26 LTS: Temporal API Is Now Production-Ready](https://blog.thecodingant.in/node-js-26-is-now-lts-what-every-mern-developer-actually-needs-to-know)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
