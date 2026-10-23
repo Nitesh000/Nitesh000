@@ -61,12 +61,12 @@ _No metrics available right now._
 
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
+- [AMD &amp; Intel Unified PyTorch on x86 — What Python Devs Need](https://blog.thecodingant.in/amd-and-intel-just-ended-the-x86-ai-inference-war-here-s-what-python-devs-need-to-know)
 - [Google Switched to Pyrefly — Your Python Stack Should Too](https://blog.thecodingant.in/google-just-switched-its-python-type-checker-to-pyrefly-your-ml-pipeline-should-pay-attention)
 - [Node.js Security Patches Oct 2026: Your MERN Checklist](https://blog.thecodingant.in/node-js-security-releases-hit-all-active-lines-today-the-mern-dev-s-patching-checklist)
 - [Remix 3.0 Dropped React — What MERN Devs Must Know](https://blog.thecodingant.in/remix-3-0-dropped-react-here-s-what-every-mern-dev-needs-to-think-about)
 - [Zod 4.5: Schema Compilation &amp; 9x Memory Reduction](https://blog.thecodingant.in/zod-4-5-just-made-your-mern-stack-validation-9x-leaner-here-s-what-changed)
 - [MongoDB Free Vector Search: What MERN Devs Need to Know](https://blog.thecodingant.in/mongodb-just-gave-you-free-local-vector-search-here-s-what-your-mern-app-can-do-with-it)
-- [Vibe Coding&#x27;s Security Debt: What MERN Devs Must Know](https://blog.thecodingant.in/vibe-coding-has-a-security-bill-coming-due-what-mern-devs-need-to-know)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
