@@ -61,12 +61,12 @@ _No metrics available right now._
 
 <!-- BLOG-POST-LIST:START -->
 - [Archive - Nitesh&#x27;s Blogs](https://blog.thecodingant.in/archive)
+- [Agent Skills Is Now a Linux Foundation Standard: MERN Guide](https://blog.thecodingant.in/agent-skills-is-now-a-linux-foundation-standard-your-mern-repo-should-ship-one)
 - [GCP London Outage: Make Your MERN App Survive a Zone Failure](https://blog.thecodingant.in/one-zone-lost-power-and-half-the-uk-went-down-building-mern-apps-that-survive-it)
 - [AMD &amp; Intel Unified PyTorch on x86 — What Python Devs Need](https://blog.thecodingant.in/amd-and-intel-just-ended-the-x86-ai-inference-war-here-s-what-python-devs-need-to-know)
 - [Google Switched to Pyrefly — Your Python Stack Should Too](https://blog.thecodingant.in/google-just-switched-its-python-type-checker-to-pyrefly-your-ml-pipeline-should-pay-attention)
 - [Node.js Security Patches Oct 2026: Your MERN Checklist](https://blog.thecodingant.in/node-js-security-releases-hit-all-active-lines-today-the-mern-dev-s-patching-checklist)
 - [Remix 3.0 Dropped React — What MERN Devs Must Know](https://blog.thecodingant.in/remix-3-0-dropped-react-here-s-what-every-mern-dev-needs-to-think-about)
-- [Zod 4.5: Schema Compilation &amp; 9x Memory Reduction](https://blog.thecodingant.in/zod-4-5-just-made-your-mern-stack-validation-9x-leaner-here-s-what-changed)
 <!-- BLOG-POST-LIST:END -->
 
 <br>
